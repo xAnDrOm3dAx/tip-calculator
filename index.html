@@ -28,62 +28,65 @@
 </head>
 
 <body>
-  <div class="page-wrapper">
+  <header class="header">
+    <img src="images/logo.svg" alt="logo">
+  </header>
 
-    <header class="header">
-      <img src="images/logo.svg" alt="logo">
-    </header>
+  <main class="app-wrapper">
+    <section class="app-left">
+      <div class="bill-input">
+        <label for="bill">Bill</label>
+        <input type="number" id="bill" name="bill" placeholder="0">
+      </div>
 
-
-    <main class="app-wrapper">
-      <section class="app-left">
-        <div class="bill-input">
-          <label for="bill">Bill</label>
-          <input type="number" id="bill" name="bill" placeholder="0">
+      <div class="tip-selection">
+        <label>Select Tip %</label>
+        <div class="button-container">
+          <button data-number class=>5%</button>
+          <button data-number class=>10%</button>
+          <button data-number class=>15%</button>
+          <button data-number class=>25%</button>
+          <button data-number class=>50%</button>
+          <button class="custom-btn">Custom</button>
         </div>
+      </div>
 
-        <div class="tip-selection">
-          <label>Select Tip %</label>
-          <button data-number class="tip-amount">5%</button>
-          <button data-number class="tip-amount">10%</button>
-          <button data-number class="tip-amount">15%</button>
-          <button data-number class="tip-amount">25%</button>
-          <button data-number class="tip-amount">50%</button>
-          <button class="tip-amount custom">Custom</button>
-        </div>
+      <div class="select-number">
+        <label for="number-of-people">Number of People</label>
+        <input type="number" id="number-of-people" name="number-of-people" placeholder="0">
+      </div>
+    </section>
 
-        <div class="select-number">
-          <label for="number-of-people">Number of People</label>
-          <input type="number" id="number-of-people" name="number-of-people" placeholder="0">
-        </div>
-      </section>
-
-      <section class="app-right">
+    <section class="app-right">
+      <div class="results">
         <div class="result">
           <div>
             <h4>Tip Amount</h4>
             <p>/ person</p>
           </div>
-          <p>$0.00</p>
+          <span id="outcome">$0.00</span>
         </div>
 
         <div class="result">
           <div>
-            <h4>Tip Amount</h4>
+            <h4>Total</h4>
             <p>/ person</p>
           </div>
-          <p>$0.00</p>
+          <span id="outcome">$32.47</span>
         </div>
+      </div>
 
-        <button id="reset">Reset</button>
-      </section>
-    </main>
+      <button id="reset">RESET</button>
+    </section>
+  </main>
 
+  <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      <br>
       Coded by <a href="#">Your Name Here</a>.
     </div>
-  </div>
+  </footer>
 </body>
 
 </html>
