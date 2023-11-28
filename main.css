@@ -207,7 +207,8 @@ header {
       color: var(--grayish-cyan);
     }
 
-    #outcome {
+    #outcome-a,
+    #outcome-b {
       color: var(--strong-cyan);
       font-size: 2rem;
     }
