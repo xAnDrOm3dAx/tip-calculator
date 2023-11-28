@@ -127,7 +127,7 @@ header {
       font-weight: 700;
 
       &:hover {
-        background-color: var(--light-grayish-cyan);
+        background-color: var(--strong-cyan);
         color: var(--very-dark-cyan);
       }
 
