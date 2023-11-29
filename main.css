@@ -123,6 +123,7 @@ header {
       padding: 4px;
       color: var(--very-light-grayish-cyan);
       font-weight: 700;
+      font-size: inherit;
 
       &:hover {
         background-color: var(--strong-cyan);
@@ -131,7 +132,7 @@ header {
 
       @media (max-width: 640px) {
         padding: 6px 0;
-        font-size: var(--form-input-font-size);
+        font-size: inherit;
       }
     }
 
@@ -140,7 +141,7 @@ header {
       color: var(--very-dark-cyan);
       width: 100%;
       height: 90%;
-      font-size: 1rem;
+      font-size: inherit;
       margin: 0;
       padding: 4px;
       border: 1px solid white;
@@ -157,6 +158,7 @@ header {
       @media (max-width: 640px) {
         font-size: var(--form-input-font-size);
         height: 100%;
+        font-size: inherit;
       }
     }
   }
