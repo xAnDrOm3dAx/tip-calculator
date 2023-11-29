@@ -19,25 +19,20 @@ tipButtons.forEach((button) => {
   });
 });
 
-// Array of input elements
+// Handle keydown events for input fields
 const inputElements = [billInput, numOfPeople, customTip];
 
-// Function to handle keydown events for input fields
-function handleInput(inputField, e) {
+inputElements.forEach((inputElement) => {
+  inputElement.addEventListener("keydown", handleInput);
+}); // Add keydown event listener to all input elements
+
+function handleInput(e) {
   const invalidChars = ["-", "+", "e"];
 
   if (invalidChars.includes(e.key)) {
     e.preventDefault();
   }
 }
-
-function addInputEventListener(inputElement) {
-  inputElement.addEventListener("keydown", (e) => {
-    handleInput(inputElement, e);
-  });
-}
-
-inputElements.forEach(addInputEventListener); // Adding event listeners using the function
 
 function reset() {
   billInput.value = "";
