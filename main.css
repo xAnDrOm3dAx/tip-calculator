@@ -154,6 +154,11 @@ header {
         color: var(--very-dark-cyan);
       }
 
+      &:focus {
+        background-color: var(--strong-cyan);
+        color: var(--very-dark-cyan);
+      }
+
       @media (max-width: 640px) {
         padding: 6px 0;
         font-size: inherit;
