@@ -98,8 +98,32 @@ header {
   }
 }
 
+.select-number {
+  display: flex;
+  flex-direction: column;
+
+  & input {
+    background: var(--very-light-grayish-cyan) url("images/icon-person.svg") no-repeat scroll 10px 10px;
+  }
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+
+    & span {
+      color: red;
+      font-size: 0.8rem;
+      display: none;
+    }
+  }
+
+  > div > label {
+    margin-top: 20px;
+  }
+}
+
 .tip-selection {
-  margin: 20px 0;
+  margin: 20px 0 0;
 
   .button-container {
     display: grid;
@@ -160,25 +184,6 @@ header {
         height: 100%;
         font-size: inherit;
       }
-    }
-  }
-}
-
-.select-number {
-  display: flex;
-  flex-direction: column;
-
-  & input {
-    background: var(--very-light-grayish-cyan) url("images/icon-person.svg") no-repeat scroll 10px 10px;
-  }
-
-  > div {
-    display: flex;
-    justify-content: space-between;
-
-    & span {
-      color: red;
-      font-size: 0.8rem;
     }
   }
 }
