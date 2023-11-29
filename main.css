@@ -22,6 +22,7 @@ body {
   align-items: center;
   font-family: var(--font-family);
   background-color: var(--light-grayish-cyan);
+  width: 100%;
 }
 
 label {
@@ -167,6 +168,16 @@ header {
 
   & input {
     background: var(--very-light-grayish-cyan) url("images/icon-person.svg") no-repeat scroll 10px 10px;
+  }
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+
+    & span {
+      color: red;
+      font-size: 0.8rem;
+    }
   }
 }
 
