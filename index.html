@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,20 +11,7 @@
   <link rel="stylesheet" href="main-css-reset.css">
   <link rel="stylesheet" href="main.css">
   <script src="main.js" defer></script>
-
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -37,7 +23,7 @@
     <section class="app-left">
       <div class="bill-input">
         <label for="bill">Bill</label>
-        <input type="number" id="bill" name="bill" placeholder="0">
+        <input type="number" id="bill" name="bill" class="bill" placeholder="0">
       </div>
 
       <div class="tip-selection">
@@ -48,7 +34,7 @@
           <button data-number class=>15%</button>
           <button data-number class=>25%</button>
           <button data-number class=>50%</button>
-          <input type="number" id="custom-input" name="custom-input" placeholder="Custom">
+          <input type="number" id="custom-input" class="custom-input" name="custom-input" placeholder="Custom">
         </div>
       </div>
 
@@ -65,7 +51,7 @@
             <h4>Tip Amount</h4>
             <p>/ person</p>
           </div>
-          <span id="outcome-a">$0.00</span>
+          <span id="outcome-a" class="outcome-a">$0.00</span>
         </div>
 
         <div class="result">
@@ -73,11 +59,11 @@
             <h4>Total</h4>
             <p>/ person</p>
           </div>
-          <span id="outcome-b">$32.47</span>
+          <span id="outcome-b" class="outcome-b">$32.47</span>
         </div>
       </div>
 
-      <button id="reset">RESET</button>
+      <button id="reset" class="reset">RESET</button>
     </section>
   </main>
 

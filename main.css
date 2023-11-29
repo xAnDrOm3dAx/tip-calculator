@@ -95,7 +95,7 @@ header {
   display: flex;
   flex-direction: column;
 
-  #bill {
+  .bill {
     background: var(--very-light-grayish-cyan) url("images/icon-dollar.svg") no-repeat scroll 10px 10px;
   }
 }
@@ -137,7 +137,7 @@ header {
       }
     }
 
-    #custom-input {
+    .custom-input {
       background-color: var(--very-light-grayish-cyan);
       color: var(--very-dark-cyan);
       width: 100%;
@@ -207,30 +207,30 @@ header {
       color: var(--grayish-cyan);
     }
 
-    #outcome-a,
-    #outcome-b {
+    .outcome-a,
+    .outcome-b {
       color: var(--strong-cyan);
       font-size: 2rem;
     }
   }
 }
 
-#reset {
+.reset {
   background-color: var(--dark-grayish-cyan);
   border-style: none;
   border-radius: 3px;
   padding: 5px 0;
   font-family: inherit;
   color: var(--very-dark-cyan);
-}
 
-#reset:hover {
-  background-color: var(--light-grayish-cyan);
-  color: var(--very-dark-cyan);
-}
+  &:hover {
+    background-color: var(--light-grayish-cyan);
+    color: var(--very-dark-cyan);
+  }
 
-#reset.active {
-  background-color: var(--strong-cyan);
+  &.active {
+    background-color: var(--strong-cyan);
+  }
 }
 
 footer {
