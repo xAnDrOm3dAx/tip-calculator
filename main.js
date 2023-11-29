@@ -18,13 +18,23 @@ const handleInput = (inputField, e) => {
   }
 };
 
+const addInputEventListener = (inputElement) => {
+  inputElement.addEventListener("keydown", (e) => {
+    handleInput(inputElement, e);
+  });
+};
+
+// Adding event listeners using the function
+inputElements.forEach(addInputEventListener);
+resetButton.addEventListener("click", reset);
+
 // Other functions
-const reset = () => {
+function reset() {
   billInput.value = "";
-  numOfPeopleInput.value = "";
+  numOfPeople.value = "";
   tipAmount.textContent = "$0.00";
   totalAmount.textContent = "$0.00";
-};
+}
 
 function calculateTip() {
   /* 
@@ -39,14 +49,3 @@ total per person = total amount / number of people
   // let perPersonTip = tipAmount / numOfPeople;
   // let perPersonAmount = totalAmount / numOfPeople;
 }
-
-// Event Listeners
-const addInputEventListener = (inputElement) => {
-  inputElement.addEventListener("keydown", (e) => {
-    handleInput(inputElement, e);
-  });
-};
-
-// Adding event listeners using the function
-inputElements.forEach(addInputEventListener);
-resetButton.addEventListener("click", reset);
