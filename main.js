@@ -25,10 +25,10 @@ tipButtons.forEach((button) => {
 const inputElements = [billInput, numOfPeople, customTip];
 
 inputElements.forEach((inputElement) => {
-  inputElement.addEventListener("keydown", handleInput);
+  inputElement.addEventListener("keydown", validateInput);
 }); // Add keydown event listener to all input elements
 
-function handleInput(e) {
+function validateInput(e) {
   const invalidChars = ["-", "+", "e"];
 
   if (invalidChars.includes(e.key)) {
