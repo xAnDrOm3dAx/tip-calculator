@@ -19,10 +19,12 @@ resetButton.addEventListener("click", reset);
 
 billInput.addEventListener("keyup", (e) => {
   billValue = Number(e.target.value);
+  calculate();
 });
 
 numOfPeople.addEventListener("keyup", (e) => {
   numOfPeopleValue = Number(e.target.value);
+  calculate();
 });
 
 tipButtons.forEach((button) => {
