@@ -53,6 +53,7 @@ function reset() {
   customTip.value = "";
   tipAmount.textContent = "$0.00";
   totalAmount.textContent = "$0.00";
+  numOfPeopleAlert.style.visibility = "hidden";
 }
 resetButton.addEventListener("click", reset);
 
