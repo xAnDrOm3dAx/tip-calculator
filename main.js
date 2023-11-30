@@ -93,3 +93,20 @@ function calculate() {
 // refactor validateInput to work with iOS and mac. Remove number and replace with text? Validate with RGX.
 // Limit maxlength of user input
 // Buttons do not stay highlighted when user clicks away
+// Do I need default values? And do I need to reset the top percentages here?
+
+/* 
+tipButtons.forEach((button) => {
+  button.addEventListener("click", function (e) {
+    tipPercentage = "";
+    tipPercentage = e.target.textContent.slice(0, -1); // Remove the last character (%)
+    calculate();
+  });
+});
+
+customTip.addEventListener("keyup", (e) => {
+  tipPercentage = "";
+  tipPercentage = Number(e.target.value);
+  calculate();
+});
+*/
