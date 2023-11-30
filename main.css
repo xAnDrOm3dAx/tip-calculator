@@ -113,7 +113,9 @@ header {
     & span {
       color: red;
       font-size: 0.8rem;
-      display: none;
+      display: flex;
+      align-items: end;
+      visibility: hidden;
     }
   }
 
@@ -244,12 +246,8 @@ header {
   color: var(--very-dark-cyan);
 
   &:hover {
-    background-color: var(--light-grayish-cyan);
-    color: var(--very-dark-cyan);
-  }
-
-  &.active {
     background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
   }
 }
 
