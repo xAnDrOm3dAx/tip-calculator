@@ -6,7 +6,7 @@ const tipAmount = document.querySelector("#outcome-a");
 const totalAmount = document.querySelector("#outcome-b");
 const resetButton = document.querySelector("#reset");
 
-// Global Variables
+// Default values
 let tipPercentage = ""; // Variable to store the clicked button's text content
 
 //Event Listeners
@@ -14,7 +14,7 @@ resetButton.addEventListener("click", reset);
 
 tipButtons.forEach((button) => {
   button.addEventListener("click", function (e) {
-    tipPercentage = e.target.textContent.slice(0, -1); // Remove the last character (which is '%');
+    tipPercentage = e.target.textContent.slice(0, -1); // Remove the last character (%)
     console.log(tipPercentage);
   });
 });
