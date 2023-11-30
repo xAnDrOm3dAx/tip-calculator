@@ -8,16 +8,35 @@ const totalAmount = document.querySelector("#outcome-b");
 const resetButton = document.querySelector("#reset");
 
 // Default values
-let tipPercentage = ""; // Variable to store the clicked button's text content
+let tipPercentage = ""; // Variable to store the clicked button's and custom text content
 let billValue = 0.0;
 let numOfPeopleValue = 1;
 
 //Event Listeners
+billInput.addEventListener("keyup", (e) => {
+  billValue = Number(e.target.value);
+  console.log(billValue);
+});
+
+numOfPeople.addEventListener("keyup", (e) => {
+  // numOfPeopleValue = 1;
+  numOfPeopleValue = Number(e.target.value);
+  console.log(numOfPeopleValue);
+});
+
+customTip.addEventListener("keyup", (e) => {
+  tipPercentage = "";
+  tipPercentage = Number(e.target.value);
+  console.log(tipPercentage);
+  calculate();
+});
 
 tipButtons.forEach((button) => {
   button.addEventListener("click", function (e) {
+    tipPercentage = "";
     tipPercentage = e.target.textContent.slice(0, -1); // Remove the last character (%)
     console.log(tipPercentage);
+    calculate();
   });
 });
 
@@ -58,6 +77,17 @@ function reset() {
 resetButton.addEventListener("click", reset);
 
 function calculate() {
+  let totalPerPerson = billValue / numOfPeopleValue;
+  console.log(totalPerPerson);
+
+  // if numOfPeopleValue = 0 - return
+
+  // if (billValue >= 1) {
+  //   totalAmount.textContent = (billValue * tipPercentage) / numOfPeople;
+  //   let total = (billValue * (tipValue + 1)) / peopleValue;
+  //   results[0].innerHTML = "$" + tipAmount.toFixed(2);
+  //   results[1].innerHTML = "$" + total.toFixed(2);
+  // }
   /* 
 tip amount = bill amount * (tip percentage / 100)
 tip amount per person = tip amount / number of people
@@ -70,3 +100,10 @@ total per person = total amount / number of people
   // let perPersonTip = tipAmount / numOfPeople;
   // let perPersonAmount = totalAmount / numOfPeople;
 }
+
+// customTip.addEventListener("keyup", () => {
+//     tipPercent = custom.value;
+//     const tipAmount = bill.value * (tipPercent /100)
+// });
+
+console.log(tipPercentage);
