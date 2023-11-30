@@ -2,6 +2,7 @@ const billInput = document.querySelector("#bill");
 const tipButtons = document.querySelectorAll("[data-number]");
 const customTip = document.querySelector("#custom-input");
 const numOfPeople = document.querySelector("#num-of-people");
+const numOfPeopleAlert = document.querySelector("#cant-be-zero");
 const tipAmount = document.querySelector("#outcome-a");
 const totalAmount = document.querySelector("#outcome-b");
 const resetButton = document.querySelector("#reset");
@@ -12,7 +13,6 @@ let billValue = 0.0;
 let numOfPeopleValue = 1;
 
 //Event Listeners
-resetButton.addEventListener("click", reset);
 
 tipButtons.forEach((button) => {
   button.addEventListener("click", function (e) {
@@ -36,6 +36,17 @@ function handleInput(e) {
   }
 }
 
+function cantBeZeroAlert() {
+  const numOfPeopleValue = parseInt(numOfPeople.value);
+
+  if (numOfPeopleValue === 0) {
+    numOfPeopleAlert.style.visibility = "visible";
+  } else {
+    numOfPeopleAlert.style.visibility = "hidden";
+  }
+}
+numOfPeople.addEventListener("input", cantBeZeroAlert);
+
 function reset() {
   billInput.value = "";
   numOfPeople.value = "";
@@ -43,6 +54,7 @@ function reset() {
   tipAmount.textContent = "$0.00";
   totalAmount.textContent = "$0.00";
 }
+resetButton.addEventListener("click", reset);
 
 function calculate() {
   /* 
