@@ -92,3 +92,4 @@ function calculate() {
 
 // refactor validateInput to work with iOS and mac. Remove number and replace with text? Validate with RGX.
 // Limit maxlength of user input
+// Buttons do not stay highlighted when user clicks away
