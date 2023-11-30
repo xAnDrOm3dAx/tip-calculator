@@ -8,6 +8,8 @@ const resetButton = document.querySelector("#reset");
 
 // Default values
 let tipPercentage = ""; // Variable to store the clicked button's text content
+let billValue = 0.0;
+let numOfPeopleValue = 1;
 
 //Event Listeners
 resetButton.addEventListener("click", reset);
