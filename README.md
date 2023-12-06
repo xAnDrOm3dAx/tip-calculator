@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://xandrom3dax.github.io/tip-calculator/]
-- Live Site URL: [https://github.com/xAnDrOm3dAx/tip-calculator]
+- Solution URL: https://xandrom3dax.github.io/tip-calculator/
+- Live Site URL: https://github.com/xAnDrOm3dAx/tip-calculator
 
 ## My process
 
@@ -50,5 +50,5 @@ I have noticed the JS validation that I have used for the number inputs does not
 
 ## Author
 
-- Website - [https://github.com/xAnDrOm3dAx]
-- Frontend Mentor - [@xAnDrOm3dAx]
+- Website - https://github.com/xAnDrOm3dAx
+- Frontend Mentor - @xAnDrOm3dAx
