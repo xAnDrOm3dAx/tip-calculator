@@ -48,19 +48,24 @@ inputElements.forEach((inputElement) => {
   inputElement.addEventListener("keydown", validateInput);
 }); // Add keydown event listener to all input elements
 
+let areInputsValid = true;
+
+inputElements.forEach((inputElement) => {
+  if (isNaN(inputElement.value)) {
+    areInputsValid = false;
+  }
+});
+
+if (areInputsValid) {
+  calculate();
+}
+
 // Functions
 function validateInput(e) {
   const invalidChars = ["-", "+", "e"];
 
   if (invalidChars.includes(e.key)) {
     e.preventDefault();
-  }
-
-  if (isNaN(inputElements)) {
-    console.log("not a number");
-    return;
-  } else {
-    calculate();
   }
 }
 
