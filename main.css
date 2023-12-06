@@ -263,3 +263,9 @@ footer {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* .focused {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+  display: none;
+} */
