@@ -55,6 +55,13 @@ function validateInput(e) {
   if (invalidChars.includes(e.key)) {
     e.preventDefault();
   }
+
+  if (isNaN(inputElements)) {
+    console.log("not a number");
+    return;
+  } else {
+    calculate();
+  }
 }
 
 function cantBeZeroAlert() {
