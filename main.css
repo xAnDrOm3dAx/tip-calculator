@@ -216,6 +216,8 @@ header {
 
   .result {
     display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
