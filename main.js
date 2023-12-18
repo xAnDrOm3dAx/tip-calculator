@@ -41,6 +41,26 @@ customTip.addEventListener("keyup", (e) => {
   calculate();
 });
 
+// Handle input events for input fields
+const inputElements = [billInput, numOfPeople, customTip];
+
+inputElements.forEach((inputElement) => {
+  inputElement.addEventListener("input", validateInput);
+});
+
+// Functions
+function validateInput(e) {
+  // Get the current value of the input
+  const inputValue = e.target.value;
+
+  // Use a regular expression to remove any characters that are not numbers or dots
+  const cleanedValue = inputValue.replace(/[^0-9.]/g, "");
+
+  // Update the input value with the cleaned value
+  e.target.value = cleanedValue;
+}
+
+/*
 // Handle keydown events for input fields
 const inputElements = [billInput, numOfPeople, customTip];
 
@@ -56,6 +76,7 @@ function validateInput(e) {
     e.preventDefault();
   }
 }
+*/
 
 function cantBeZeroAlert() {
   const numOfPeopleValue = parseInt(numOfPeople.value);
@@ -71,6 +92,7 @@ function reset() {
   billInput.value = "";
   numOfPeople.value = "";
   customTip.value = "";
+  tipPercentage = "";
   tipAmount.textContent = "$0.00";
   totalAmount.textContent = "$0.00";
   numOfPeopleAlert.style.visibility = "hidden";
