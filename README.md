@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://xandrom3dax.github.io/tip-calculator/
-- Live Site URL: https://github.com/xAnDrOm3dAx/tip-calculator
+- Solution URL: https://github.com/xAnDrOm3dAx/tip-calculator 
+- Live Site URL: https://xandrom3dax.github.io/tip-calculator/
 
 ## My process
 
