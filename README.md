@@ -44,10 +44,6 @@ Users should be able to:
 - CSS Grid
 - Vanilla JS
 
-### Continued development
-
-I have noticed the JS validation that I have used for the number inputs does not work on safari browsers. This is something that I would like to correct.
-
 ## Author
 
 - Website - https://github.com/xAnDrOm3dAx
