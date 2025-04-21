@@ -33,8 +33,10 @@ Users should be able to:
 
 - Solution URL: https://github.com/xAnDrOm3dAx/tip-calculator 
 - Live Site URL: https://xandrom3dax.github.io/tip-calculator/
+- FEM solution found here: https://www.frontendmentor.io/solutions/responsive-tip-calculator-built-using-semantic-html-nested-css-and-js-KNmtrOoxbe
 
 ## My process
+I have gone a little off path. I decided to rework my html to adjust the flow of the UI and have changed it so the user first inputs the bill total, selects the number of people, and then adds the tip amount. I find that it makes more sense compared than the original design. I have also made the overall design smaller, to create a compact, sharper looking UI.
 
 ### Built with
 
